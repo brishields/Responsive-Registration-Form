@@ -15,13 +15,14 @@
 
         </header>
 
-        <main>
+        <main class="container">
             <h2>Signup for our newsletter</h2>
             <p id="first-p">Get the latest news on how your code is doing right in your inbox</p>
             <hr class="hr-thick">
             <hr class="hr-thin"> 
             <form action="index.html" method="post" autocomplete="on">
                 <fieldset class="contact">
+                <div class="contact-container">
                 <legend>Contact Information</legend>
                 <div>
                     <label for="name">Full Name<abbr title="required" aria-label="required"></abbr></label>
@@ -104,6 +105,7 @@
                     <label for="postal-code">Zip Code</label>	
                     <input type="text" id="postal-code" name="postal-code" autocomplete="postal-code" required>
                 </div>
+                </div>
                 </fieldset>
                 <hr class="hr-thin">
 
@@ -112,26 +114,30 @@
 
                     <fieldset>
                         <legend>Select the newsletters you would like to receive</legend>
-                            <div>
+                            <div class="checkbox">
                                 <label for="html-news">HTML News</label>
-                                <input type="checkbox" id="html-news" name="news-pref" value="html-news" checked>
+                                <span><input type="checkbox" id="html-news" name="news-pref" value="html-news" checked></span>
                             </div>
-                            <div>
+                            <div class="checkbox">
                                 <label for="css-news">CSS News</label>
-                                <input type="checkbox" id="css-news" name="news-pref" value="css-news">
+                                <span><input type="checkbox" id="css-news" name="news-pref" value="css-news"></span>
                             </div>
-                            <div>
+                            <div class="checkbox">
                                 <label for="javascript-news">JavaScript News</label>
-                                <input type="checkbox" id="javascript-news" name="news-pref" value="javascript-news">
+                                <span><input type="checkbox" id="javascript-news" name="news-pref" value="javascript-news"></span>
                             </div>
                     </fieldset>
 
                     <fieldset>
                         <legend>Newsletter format</legend>
-                            <label for="html">HTML</label>
-                            <input type="radio" id="html" name="news-format" value="html" checked>
-                            <label for="plain-text">Plain Text</label>
-                            <input type="radio" id="plain-text" name="news-format" value="plain-text">
+                            <div class="radio">
+                                <label for="html">HTML</label>
+                                <span><input type="radio" id="html" name="news-format" value="html" checked></span>
+                            </div>
+                            <div class="radio">
+                                <label for="plain-text">Plain Text</label>
+                                <span><input type="radio" id="plain-text" name="news-format" value="plain-text"></span>
+                            </div>
                     </fieldset>
 
                     <fieldset>
@@ -139,7 +145,7 @@
                         <textarea id="other-interests" name="other-interests"></textarea>
                     </fieldset>
                 </fieldset>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Sign Up">
             </form>
         </main>
 

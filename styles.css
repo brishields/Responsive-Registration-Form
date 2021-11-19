@@ -16,6 +16,13 @@ h1 {
     padding-bottom: 24px;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 767px;
+}
+
 h2 {
     color: #2D3945;
     text-align: center;
@@ -49,6 +56,21 @@ legend {
     color: #AAAFB4;
 }
 
+fieldset.contact div.contact-container {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+fieldset.contact input, select {
+    width: 100%;
+    max-width: 767px;
+}
+
+input#postal-code {
+    width: 30%;
+}
+
 small {
     display: block;
     text-align: center;
@@ -59,8 +81,34 @@ input[type=submit] {
     background-color: #4EBBB5;
     border: 0px;
     color: white;
+    width: 94%;
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 20px;
 }
 
 .contact label {
     display: block;
 }
+
+.checkbox, .radio {
+    height: 20px;
+    position: relative;
+}
+
+.checkbox span, .radio span {
+    position: absolute;
+    left: 0px;
+    top: 0.5px;
+}
+
+div.checkbox label, div.radio label {
+    margin-left: 25px;
+}
+
+/* #checkbox span {
+    left: 0px;
+    top: 0.5px;
+} */
