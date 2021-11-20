@@ -62,7 +62,7 @@ form {
 
 fieldset {
     border: 0px;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
     text-align: left;
     padding: 0px;
     margin-left: 0px;
@@ -140,6 +140,10 @@ input::placeholder {
 
 select {
     color: #ADB2B7;
+}
+
+option {
+    color: #000;
 }
 
 input[type="text"], input[type="tel"], input[type="email"], select, textarea {
