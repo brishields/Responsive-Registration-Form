@@ -11,7 +11,7 @@
     </head>
     <body>
         <header>
-            <h1>The Code Review</h1>
+            <h1>THE CODE REVIEW</h1>
 
         </header>
 
@@ -23,7 +23,7 @@
             <form action="index.html" method="post" autocomplete="on">
                 <fieldset class="contact">
                 <div class="contact-container">
-                <legend>Contact Information</legend>
+                <legend class="contact-legend">Contact Information</legend>
                 <div>
                     <label for="name">Full Name<abbr title="required" aria-label="required"></abbr></label>
                     <input type="text" id="name" name="name" autocomplete="name" placeholder="Required" required>
@@ -110,40 +110,39 @@
                 <hr class="hr-thin">
 
                 <fieldset>
-                    <legend>Newsletter</legend>
+                    <legend class="news-legend">Newsletter</legend>
 
                     <fieldset>
                         <legend>Select the newsletters you would like to receive</legend>
                             <div class="checkbox">
+                                <input type="checkbox" id="html-news" name="news-pref" value="html-news" checked>
                                 <label for="html-news">HTML News</label>
-                                <span><input type="checkbox" id="html-news" name="news-pref" value="html-news" checked></span>
                             </div>
                             <div class="checkbox">
-                                <label for="css-news">CSS News</label>
-                                <span><input type="checkbox" id="css-news" name="news-pref" value="css-news"></span>
+                                <input type="checkbox" id="css-news" name="news-pref" value="css-news">
+                                <label for="css-news">CSS News</label>                               
                             </div>
                             <div class="checkbox">
+                                <input type="checkbox" id="javascript-news" name="news-pref" value="javascript-news">
                                 <label for="javascript-news">JavaScript News</label>
-                                <span><input type="checkbox" id="javascript-news" name="news-pref" value="javascript-news"></span>
                             </div>
                     </fieldset>
 
                     <fieldset>
                         <legend>Newsletter format</legend>
                             <div class="radio">
-                                <label for="html">HTML</label>
-                                <span><input type="radio" id="html" name="news-format" value="html" checked></span>
+                                <input type="radio" id="html" name="news-format" value="html" checked>
+                                <label for="html">HTML</label>                               
                             </div>
                             <div class="radio">
-                                <label for="plain-text">Plain Text</label>
-                                <span><input type="radio" id="plain-text" name="news-format" value="plain-text"></span>
+                                <input type="radio" id="plain-text" name="news-format" value="plain-text">
+                                <label for="plain-text">Plain Text</label>                                
                             </div>
                     </fieldset>
 
                     <fieldset>
                         <legend>Other topics you'd like to hear about</legend>
-                        <textarea id="other-interests" name="other-interests"></textarea>
-                    </fieldset>
+                        <textarea id="other-interests" name="other-interests" cols="40" rows="5"></textarea>                    </fieldset>
                 </fieldset>
                 <input type="submit" value="Sign Up">
             </form>
