@@ -17,6 +17,7 @@ h1 {
     padding-bottom: 24px;
     font-weight: 400;
     font-size: 1.2em;
+    margin-bottom: 36px;
 }
 
 .container {
@@ -49,6 +50,7 @@ hr {
 .hr-thin {
     border-width: 1px;
     margin-top: 0px;
+    margin-bottom: 28px;
 }
 
 form {
