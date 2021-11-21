@@ -17,14 +17,17 @@ h1 {
     padding-bottom: 24px;
     font-weight: 400;
     font-size: 1.2em;
-    margin-bottom: 36px;
+    margin-bottom: 0px;
 }
 
 .container {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 42px;
     width: 92%;
     max-width: 767px;
+    background-color: #558bc00a;
+    border-radius: 5px;
 }
 
 label, fieldset fieldset legend {
@@ -36,6 +39,8 @@ label, fieldset fieldset legend {
 h2 {
     color: #2D3945;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 hr {
@@ -123,6 +128,7 @@ input[type=submit] {
     padding: 20px;
     font-size: 1.5em;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .contact label {
@@ -134,18 +140,27 @@ div.checkbox label, div.radio label {
 }
 
 input::placeholder {
-    text-align: right;
     font-style: italic;
     margin-right: 10px;
     color: #ADB2B7;
 }
 
+input.placeholder-right::placeholder {
+    text-align: right;
+}
+
+input.placeholder-left::placeholder {
+     text-align: left;
+}
+
 select {
     color: #ADB2B7;
+    font-style: italic;
 }
 
 option {
     color: #000;
+    font-style: normal;
 }
 
 input[type="text"], input[type="tel"], input[type="email"], select, textarea {
@@ -188,6 +203,8 @@ textarea {
     .container {
         width: 60%;
         max-width: 767px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     div.contact-container div {
