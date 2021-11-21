@@ -172,9 +172,47 @@ div.checkbox:nth-of-type(2), div.checkbox:nth-of-type(3), div.radio:nth-of-type(
     margin-top: 10px;
 }
 
-
 textarea {
     width: 100%;
     height: auto;
     max-width: 767px;
+}
+
+#postal-code-spacer {
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+
+    .container {
+        width: 60%;
+        max-width: 767px;
+    }
+
+    div.contact-container div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        max-width:  767px;
+    }
+
+    div.contact-container div label {
+        width: 38%;
+        max-width: 460px;
+        flex-basis: 125.719px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    input[type=submit] {
+        width: 100%;
+    }
+
+    label, fieldset fieldset legend {
+        font-size: .75em;
+    }
+
 }
