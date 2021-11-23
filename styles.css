@@ -25,8 +25,6 @@ h1 {
     margin-right: auto;
     padding-top: 42px;
     width: 92%;
-    max-width: 767px;
-    background-color: #558bc00a;
     border-radius: 5px;
 }
 
@@ -61,7 +59,6 @@ hr {
 form {
     width: 100%;
     height: auto;
-    max-width: 767px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -101,7 +98,6 @@ fieldset.contact div.contact-container {
 
 fieldset.contact input, select {
     width: 100%;
-    max-width: 767px;
     margin-bottom: 20px;
 }
 
@@ -121,7 +117,6 @@ input[type=submit] {
     border: 0px;
     color: white;
     width: 87%;
-    max-width: 767px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
@@ -190,7 +185,6 @@ div.checkbox:nth-of-type(2), div.checkbox:nth-of-type(3), div.radio:nth-of-type(
 textarea {
     width: 100%;
     height: auto;
-    max-width: 767px;
 }
 
 #postal-code-spacer {
@@ -202,7 +196,6 @@ textarea {
 
     .container {
         width: 60%;
-        max-width: 767px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -213,12 +206,10 @@ textarea {
         flex-wrap: nowrap;
         align-items: center;
         width: 100%;
-        max-width:  767px;
     }
 
     div.contact-container div label {
         width: 38%;
-        max-width: 460px;
         flex-basis: 125.719px;
         flex-grow: 0;
         flex-shrink: 0;
